@@ -191,6 +191,15 @@ background-color: #404BBF;
 .benefits-item{
     width: calc((100% - 72px) / 4);
 }
+
+.icons-box{
+        background: #f4f4fd;
+        border: 1px solid #8e8f99;
+            border-radius: 4px;
+            width: 264px;
+            height: 112px;
+    }
+
 .benefits-text {
     font-weight: 400;
         font-size: 16px;
@@ -274,23 +283,20 @@ background-color: #404BBF;
 }
 
 .overlay-wrap{
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    transform: translateY(200%);
-    transition: transform 250ms ease-in-out;
     width: 360px;
     height: 300px;
-    background-color: #4d5ae5;
 }
 
-.card-box:hover .overlay-wrap{
-    transform: translateY(0);
-}
-
-.overlay-wrap-text{
+.overlay-text{
+        width: 360px;
+        height: 300px;
+        position: absolute;
+        top: 0;
+        transform: translateY(300%);
+        transition: transform 250ms ease-in-out;
+        background-color: #4d5ae5;
     font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
@@ -299,6 +305,10 @@ background-color: #404BBF;
         padding-top: 40px;
         padding-right: 32px;
         padding-left: 32px;
+}
+
+.portfolio-item:hover .overlay-text {
+    transform: translateY(0);
 }
 
 .portfolio-wrapper{
