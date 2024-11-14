@@ -136,7 +136,7 @@ ol {
 
 .hero-section{
     background-color: #2e2f42;
-    background-image: linear-gradient(to bottom,
+    background-image: linear-gradient(
      rgba(46, 47, 66, 0.7),
      rgba(46, 47, 66, 0.7)
      ),
@@ -263,7 +263,7 @@ ol {
 }
 
 .team-wrapper{
-    padding: 32px 0px;
+    padding: 32px 16px;
 }
 
 .team-name {
@@ -277,12 +277,35 @@ ol {
 }
 .team-text {
     font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #434455;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
 }
+
+.team-icons-list{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.team-icon-item{
+    width: 40px;
+    height: 40px;
+}
+
+.team-icon-link{
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+}
+
+.team-icon{
+    fill: #fff;
+}
+
 .portfolio-caption {
     font-weight: 700;
     font-size: 36px;
